@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../fundo.a62a0635.png");
+  background-image: url("../fundo.89e82e81.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 64px;
@@ -23,7 +23,6 @@
 }
 
 .hero__text {
-  color: #fff;
   text-align: center;
   margin-top: 64px;
   margin-bottom: 64px;
@@ -33,7 +32,7 @@
 }
 
 .hero__logo {
-  height: 80px;
+  height: 200px;
   margin: 0 auto;
   display: block;
 }
@@ -44,7 +43,7 @@
   }
 
   .hero__logo {
-    height: 40px;
+    height: 60px;
   }
 
   .hero__text {
@@ -54,11 +53,163 @@
   }
 }
 
+.infos-bar {
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 16px 24px;
+  display: flex;
+}
+
+.infos-bar__infos {
+  gap: 40px;
+  display: flex;
+}
+
+.infos-bar__infos__item {
+  color: #000;
+  font-size: 14px;
+}
+
+.infos-bar__infos__item b {
+  color: #000;
+  font-size: 18px;
+  display: block;
+}
+
+@media (width <= 640px) {
+  .infos-bar, .infos-bar__infos {
+    display: block;
+  }
+
+  .infos-bar__infos__item {
+    margin-bottom: 24px;
+  }
+
+  .infos-bar__infos {
+    gap: 16px;
+  }
+}
+
+.button {
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #00aeff;
+}
+
+.button--primary:hover {
+  background-color: #008bcc;
+}
+
+@media (width <= 640px) {
+  .button {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (width <= 1024px) {
+  .button {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.event {
+  padding: 80px 0;
+}
+
+.event__title {
+  margin: 0 auto;
+  font-family: Lolapeluza, sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+}
+
+@media (width <= 640px) {
+  .event__title {
+    margin-bottom: 10px;
+    font-size: 60px;
+  }
+
+  .event__title--2 {
+    font-size: 40px;
+  }
+}
+
+.event__title--2 {
+  font-size: 70px;
+}
+
+.event--frontend {
+  background-image: linear-gradient(#ca0d20, #595959);
+}
+
+.event--frontend2 {
+  background-image: linear-gradient(#595959, #00aeff);
+  padding-bottom: 200px;
+}
+
+.event--frontend3 {
+  background-color: #00aeff;
+}
+
+.event--frontend3 h1 {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.event .container {
+  max-width: 1300px;
+  font-size: 20px;
+  display: flex;
+}
+
+.event .container .big {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media (width <= 640px) {
+  .event .container {
+    max-width: 90%;
+    font-size: 18px;
+    display: block;
+  }
+
+  .event .container .big {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 1024px) {
+  .event .container {
+    max-width: 90%;
+  }
+}
+
+@font-face {
+  font-family: Lolapeluza;
+  src: url("../FontsFree-Net-lolapeluza.81164ca1.ttf");
+  font-weight: 100;
+}
+
 * {
   box-sizing: border-box;
+  color: #fff;
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
+  list-style: none;
+  overflow-x: hidden;
 }
 
 .container {

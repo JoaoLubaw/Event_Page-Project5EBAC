@@ -1,11 +1,23 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
+
+@font-face {
+    font-family: Lolapeluza;
+    src: url(../../assets/fonts/FontsFree-Net-lolapeluza.ttf);
+    font-weight: 100;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    color: #fff;
+    color: variables.$textColor;
+    list-style: none;
+    overflow-x: hidden;
 }
 
 .container {
